@@ -1,0 +1,139 @@
+Script started on 2024-11-05 18:03:23-07:00 [TERM="xterm-256color" TTY="/dev/pts/52" COLUMNS="120" LINES="30"]
+
+Disk quotas for user muhammadmustafa.amer (uid 27941539): 
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+10.44.125.21:/CSUSERS
+                 35840K  10240M  10240M             286    100k    100k        
+
+]0;muhammadmustafa.amer@csa1:~/Assignments/Assignment4[?2004h[UC muhammadmustafa.amer@csa1 Assignment4] gdb asssign [K[K[K[K[Kign 4[K[K4
+[?2004l[35;1mGNU gdb (Fedora Linux) 14.2-3.fc40[m
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+[32m<https://www.gnu.org/software/gdb/bugs/>[m.
+Find the GDB manual and other documentation resources online at:
+    <[32mhttp://www.gnu.org/software/gdb/documentation/[m>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32massign4[m...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <[32mhttps://debuginfod.fedoraproject.org/[m>
+[?2004hEnable debuginfod for this session? (y or [n]) y
+[?2004lDebuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+Downloading separate debug info for [32m/home/csusers/muhammadmustafa.amer/Assignments/Assignment4/assign4[m
+[###                                                                                                                 ]                                                                                                                        (No debugging symbols found in [32massign4[m)
+[?2004h(gdb) b printc[KChange
+[?2004lBreakpoint 1 at [34m0x4102ac[m
+[?2004h(gdb) c
+[?2004lThe program is not being run.
+[?2004h(gdb) r
+[?2004lStarting program: [32m/home/csusers/muhammadmustafa.amer/Assignments/Assignment4/assign4[m 
+                                                                                                                                                                                                                                                [Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+Initial box values: 
+Box first : origin = (0, 0) width = 1 height = 1 area = 1
+Box second : origin = (0, 0) width = 1 height = 1 area = 1
+
+Breakpoint 1, [34m0x00000000004102ac[m in [33mprintChange[m ()
+[?2004h[?2004l[?2004h(gdb) x/i $pc[1@8[1@0
+[?2004l=> [34m0x4102ac[m <[33mprintChange[m>:	[32madrp[m	[31mx0[m, [34m0x410000[m <[33m_init[m>
+   [34m0x4102b0[m <[33mprintChange[m+4>:	[32madd[m	[31mx0[m, [31mx0[m, [34m#0x1ff[m
+   [34m0x4102b4[m <[33mprintChange[m+8>:	[32mbl[m	[34m0x410070[m <[33mprintf@plt[m>
+   [34m0x4102b8[m <[33mprintChange[m+12>:	[32madrp[m	[31mx0[m, [34m0x410000[m <[33m_init[m>
+   [34m0x4102bc[m <[33mprintChange[m+16>:	[32madd[m	[31mx0[m, [31mx0[m, [34m#0x215[m
+   [34m0x4102c0[m <[33mprintChange[m+20>:	[32mmov[m	[31mx1[m, [31mx19[m
+   [34m0x4102c4[m <[33mprintChange[m+24>:	[32mbl[m	[34m0x410370[m <[33mprintBox[m>
+   [34m0x4102c8[m <[33mprintChange[m+28>:	[32madrp[m	[31mx0[m, [34m0x410000[m <[33m_init[m>
+   [34m0x4102cc[m <[33mprintChange[m+32>:	[32madd[m	[31mx0[m, [31mx0[m, [34m#0x21b[m
+   [34m0x4102d0[m <[33mprintChange[m+36>:	[32mmov[m	[31mx1[m, [31mx20[m
+   [34m0x4102d4[m <[33mprintChange[m+40>:	[32mbl[m	[34m0x410370[m <[33mprintBox[m>
+   [34m0x4102d8[m <[33mprintChange[m+44>:	[32mldp[m	[31mx29[m, [31mx30[m, [[31msp[m], [34m#64[m
+   [34m0x4102dc[m <[33mprintChange[m+48>:	[32mret[m
+   [34m0x4102e0[m <[33mnewBox[m>:	[32mstp[m	[31mx29[m, [31mx30[m, [[31msp[m, [34m#-16[m]!
+   [34m0x4102e4[m <[33mnewBox[m+4>:	[32mmov[m	[31mx29[m, [31msp[m
+   [34m0x4102e8[m <[33mnewBox[m+8>:	[32mstr[m	[31mxzr[m, [[31mx0[m]
+   [34m0x4102ec[m <[33mnewBox[m+12>:	[32mstur[m	[31mxzr[m, [[31mx0[m, [34m#4[m]
+   [34m0x4102f0[m <[33mnewBox[m+16>:	[32mmov[m	[31mw10[m, [34m#0x1                   [m[37;2m	// #1[m
+   [34m0x4102f4[m <[33mnewBox[m+20>:	[32mstr[m	[31mw10[m, [[31mx0[m, [34m#8[m]
+   [34m0x4102f8[m <[33mnewBox[m+24>:	[32mmov[m	[31mw10[m, [34m#0x1                   [m[37;2m	// #1[m
+   [34m0x4102fc[m <[33mnewBox[m+28>:	[32mstr[m	[31mw10[m, [[31mx0[m, [34m#12[m]
+   [34m0x410300[m <[33mnewBox[m+32>:	[32mldr[m	[31mw10[m, [[31mx0[m, [34m#8[m]
+   [34m0x410304[m <[33mnewBox[m+36>:	[32mldr[m	[31mw11[m, [[31mx0[m, [34m#12[m]
+   [34m0x410308[m <[33mnewBox[m+40>:	[32mmul[m	[31mw10[m, [31mw10[m, [31mw11[m
+   [34m0x41030c[m <[33mnewBox[m+44>:	[32mstr[m	[31mw10[m, [[31mx0[m, [34m#16[m]
+   [34m0x410310[m <[33mnewBox[m+48>:	[32mldp[m	[31mx29[m, [31mx30[m, [[31msp[m], [34m#16[m
+   [34m0x410314[m <[33mnewBox[m+52>:	[32mret[m
+   [34m0x410318[m <[33mmove[m>:	[32mstp[m	[31mx29[m, [31mx30[m, [[31msp[m, [34m#-16[m]!
+   [34m0x41031c[m <[33mmove[m+4>:	[32mmov[m	[31mx29[m, [31msp[m
+[?2004h--Type <RET> for more, q to quit, c to continue without paging--c
+[?2004l   [34m0x410320[m <[33mmove[m+8>:	[32mldr[m	[31mw10[m, [[31mx0[m]
+   [34m0x410324[m <[33mmove[m+12>:	[32madd[m	[31mw10[m, [31mw10[m, [31mw1[m
+   [34m0x410328[m <[33mmove[m+16>:	[32mstr[m	[31mw10[m, [[31mx0[m]
+   [34m0x41032c[m <[33mmove[m+20>:	[32mldr[m	[31mw10[m, [[31mx0[m, [34m#4[m]
+   [34m0x410330[m <[33mmove[m+24>:	[32madd[m	[31mw10[m, [31mw10[m, [31mw2[m
+   [34m0x410334[m <[33mmove[m+28>:	[32mstr[m	[31mw10[m, [[31mx0[m, [34m#4[m]
+   [34m0x410338[m <[33mmove[m+32>:	[32mldp[m	[31mx29[m, [31mx30[m, [[31msp[m], [34m#16[m
+   [34m0x41033c[m <[33mmove[m+36>:	[32mret[m
+   [34m0x410340[m <[33mexpand[m>:	[32mstp[m	[31mx29[m, [31mx30[m, [[31msp[m, [34m#-16[m]!
+   [34m0x410344[m <[33mexpand[m+4>:	[32mmov[m	[31mx29[m, [31msp[m
+   [34m0x410348[m <[33mexpand[m+8>:	[32mldr[m	[31mw10[m, [[31mx0[m, [34m#8[m]
+   [34m0x41034c[m <[33mexpand[m+12>:	[32mmul[m	[31mw10[m, [31mw10[m, [31mw1[m
+   [34m0x410350[m <[33mexpand[m+16>:	[32mstr[m	[31mw10[m, [[31mx0[m, [34m#8[m]
+   [34m0x410354[m <[33mexpand[m+20>:	[32mldr[m	[31mw11[m, [[31mx0[m, [34m#12[m]
+   [34m0x410358[m <[33mexpand[m+24>:	[32mmul[m	[31mw11[m, [31mw11[m, [31mw1[m
+   [34m0x41035c[m <[33mexpand[m+28>:	[32mstr[m	[31mw11[m, [[31mx0[m, [34m#12[m]
+   [34m0x410360[m <[33mexpand[m+32>:	[32mmul[m	[31mw12[m, [31mw10[m, [31mw11[m
+   [34m0x410364[m <[33mexpand[m+36>:	[32mstr[m	[31mw12[m, [[31mx0[m, [34m#16[m]
+   [34m0x410368[m <[33mexpand[m+40>:	[32mldp[m	[31mx29[m, [31mx30[m, [[31msp[m], [34m#16[m
+   [34m0x41036c[m <[33mexpand[m+44>:	[32mret[m
+   [34m0x410370[m <[33mprintBox[m>:	[32mstp[m	[31mx29[m, [31mx30[m, [[31msp[m, [34m#-16[m]!
+   [34m0x410374[m <[33mprintBox[m+4>:	[32mmov[m	[31mx29[m, [31msp[m
+   [34m0x410378[m <[33mprintBox[m+8>:	[32mmov[m	[31mx10[m, [31mx0[m
+   [34m0x41037c[m <[33mprintBox[m+12>:	[32mmov[m	[31mx11[m, [31mx1[m
+   [34m0x410380[m <[33mprintBox[m+16>:	[32madrp[m	[31mx0[m, [34m0x410000[m <[33m_init[m>
+   [34m0x410384[m <[33mprintBox[m+20>:	[32madd[m	[31mx0[m, [31mx0[m, [34m#0x1c2[m
+   [34m0x410388[m <[33mprintBox[m+24>:	[32mmov[m	[31mx1[m, [31mx10[m
+   [34m0x41038c[m <[33mprintBox[m+28>:	[32mldr[m	[31mw2[m, [[31mx11[m]
+   [34m0x410390[m <[33mprintBox[m+32>:	[32mldr[m	[31mw3[m, [[31mx11[m, [34m#4[m]
+   [34m0x410394[m <[33mprintBox[m+36>:	[32mldr[m	[31mw4[m, [[31mx11[m, [34m#8[m]
+   [34m0x410398[m <[33mprintBox[m+40>:	[32mldr[m	[31mw5[m, [[31mx11[m, [34m#12[m]
+   [34m0x41039c[m <[33mprintBox[m+44>:	[32mldr[m	[31mw6[m, [[31mx11[m, [34m#16[m]
+   [34m0x4103a0[m <[33mprintBox[m+48>:	[32mbl[m	[34m0x410070[m <[33mprintf@plt[m>
+   [34m0x4103a4[m <[33mprintBox[m+52>:	[32mldp[m	[31mx29[m, [31mx30[m, [[31msp[m], [34m#16[m
+   [34m0x4103a8[m <[33mprintBox[m+56>:	[32mret[m
+   [34m0x4103ac[m <[33mequal[m>:	[32mstp[m	[31mx29[m, [31mx30[m, [[31msp[m, [34m#-16[m]!
+   [34m0x4103b0[m <[33mequal[m+4>:	[32mmov[m	[31mx29[m, [31msp[m
+   [34m0x4103b4[m <[33mequal[m+8>:	[32mmov[m	[31mx10[m, [31mx0[m
+   [34m0x4103b8[m <[33mequal[m+12>:	[32mmov[m	[31mx11[m, [31mx1[m
+   [34m0x4103bc[m <[33mequal[m+16>:	[32mmov[m	[31mx0[m, [34m#0x0                   [m[37;2m	// #0[m
+   [34m0x4103c0[m <[33mequal[m+20>:	[32mb[m	[34m0x4103c4[m <[33mif1[m>
+   [34m0x4103c4[m <[33mif1[m>:	[32mldr[m	[31mw12[m, [[31mx10[m]
+   [34m0x4103c8[m <[33mif1[m+4>:	[32mldr[m	[31mw13[m, [[31mx11[m]
+   [34m0x4103cc[m <[33mif1[m+8>:	[32mcmp[m	[31mw12[m, [31mw13[m
+   [34m0x4103d0[m <[33mif1[m+12>:	[32mb.ne[m	[34m0x41040c[m <[33mfalse[m>[37;2m  // b.any[m
+   [34m0x4103d4[m <[33mif2[m>:	[32mldr[m	[31mw12[m, [[31mx10[m, [34m#4[m]
+   [34m0x4103d8[m <[33mif2[m+4>:	[32mldr[m	[31mw13[m, [[31mx11[m, [34m#4[m]
+   [34m0x4103dc[m <[33mif2[m+8>:	[32mcmp[m	[31mw12[m, [31mw13[m
+   [34m0x4103e0[m <[33mif2[m+12>:	[32mb.ne[m	[34m0x41040c[m <[33mfalse[m>[37;2m  // b.any[m
+   [34m0x4103e4[m <[33mif3[m>:	[32mldr[m	[31mw12[m, [[31mx10[m, [34m#8[m]
+   [34m0x4103e8[m <[33mif3[m+4>:	[32mldr[m	[31mw13[m, [[31mx11[m, [34m#8[m]
+[?2004h(gdb) r[Kc
+[?2004lContinuing.
+
+Changed box values:
+Box first : origin = (-5, 7) width = 1 height = 1 area = 1
+Box second : origin = (0, 0) width = 3 height = 3 area = 9
+[Inferior 1 (process 3512382) exited with code 073]
+[?2004h[?2004l[?2004h(gdb) exit
+[?2004l]0;muhammadmustafa.amer@csa1:~/Assignments/Assignment4[?2004h[UC muhammadmustafa.amer@csa1 Assignment4] exit
+[?2004lexit
+
+Script done on 2024-11-05 18:04:19-07:00 [COMMAND_EXIT_CODE="0"]

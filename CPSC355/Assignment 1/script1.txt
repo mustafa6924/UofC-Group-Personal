@@ -1,0 +1,106 @@
+[UC muhammadmustafa.amer@csa2 Assignments] gdb assign1a09
+GNU gdb (Fedora Linux) 14.2-3.fc40
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign1a09...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.fedoraproject.org/>
+Enable debuginfod for this session? (y or [n]) y
+Debuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+(No debugging symbols found in assign1a09)
+(gdb) b main
+Breakpoint 1 at 0x4101e4
+(gdb) b print
+Breakpoint 2 at 0x41024c
+(gdb) b exit
+Breakpoint 3 at 0x410264
+(gdb) display/i $pc
+1: x/i $pc
+<error: No registers.>
+(gdb) c
+The program is not being run.
+(gdb) r
+Starting program: /home/csusers/muhammadmustafa.amer/Assignments/assign1a09
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+
+Breakpoint 1, 0x00000000004101e4 in main ()
+1: x/i $pc
+=> 0x4101e4 <main+8>:   mov     x19, #0x6                       // #6
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) n
+Program not restarted.
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x000000000041024c in print ()
+1: x/i $pc
+=> 0x41024c <print>:    adrp    x0, 0x410000 <_init>
+(gdb) p $ x17
+A syntax error in expression, near `x17'.
+(gdb) p$x17
+Undefined command: "p$x17".  Try "help".
+(gdb) p $x17
+$1 = -4968
+(gdb) p $x16
+$2 = 5
+(gdb) p $x23
+$3 = 10
+(gdb) ni
+0x0000000000410250 in print ()
+1: x/i $pc
+=> 0x410250 <print+4>:  add     x0, x0, #0x1ac
+(gdb) ni
+0x0000000000410254 in print ()
+1: x/i $pc
+=> 0x410254 <print+8>:  mov     x1, x16
+(gdb) ni
+0x0000000000410258 in print ()
+1: x/i $pc
+=> 0x410258 <print+12>: mov     x2, x17
+(gdb) ni
+0x000000000041025c in print ()
+1: x/i $pc
+=> 0x41025c <print+16>: bl      0x410070 <printf@plt>
+(gdb) ni
+At the value of x = 5 y is minimum at y = -4968
+
+Breakpoint 3.1, 0x0000000000410264 in exit ()
+1: x/i $pc
+=> 0x410264 <exit+4>:   ldp     x29, x30, [sp, #16]
+(gdb) ni
+0x0000000000410268 in exit ()
+1: x/i $pc
+=> 0x410268 <exit+8>:   ret
+(gdb) ni
+0x0000fffffffff1c8 in ?? ()
+1: x/i $pc
+=> 0xfffffffff1c8:      .inst   0xfffff490 ; undefined
+(gdb) ni
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000fffffffff1c8 in ?? ()
+1: x/i $pc
+=> 0xfffffffff1c8:      .inst   0xfffff490 ; undefined
+(gdb) ni'
+Unmatched single quote.
+(gdb) ni
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+(gdb)

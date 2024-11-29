@@ -1,0 +1,21 @@
+Script started on 2024-11-24 02:51:06-07:00 [TERM="xterm-256color" TTY="/dev/pts/48" COLUMNS="87" LINES="51"]
+
+Disk quotas for user muhammadmustafa.amer (uid 27941539): 
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+10.44.125.21:/CSUSERS
+                 35984K  10240M  10240M             297    100k    100k        
+
+]0;muhammadmustafa.amer@csa2:~/Assignments/Assignment5[?2004h[UC muhammadmustafa.amer@csa2 Assignment5] ./a5b 10 01 [K[K[K1 2004
+[?2004lOctober 1st, 2004
+]0;muhammadmustafa.amer@csa2:~/Assignments/Assignment5[?2004h[UC muhammadmustafa.amer@csa2 Assignment5] ./a5b 10 1 2004[K[K[K[K[K[K[K[K[K9 [K[K9 29 1971
+[?2004lSeptember 29th, 1971
+]0;muhammadmustafa.amer@csa2:~/Assignments/Assignment5[?2004h[UC muhammadmustafa.amer@csa2 Assignment5] ./a5b 9 29 1971[K[K[K[K[K[K[K[K[K11 06 2003
+[?2004lNovember 6th, 2003
+]0;muhammadmustafa.amer@csa2:~/Assignments/Assignment5[?2004h[UC muhammadmustafa.amer@csa2 Assignment5] ./a5b 11 06 2003[K[K[K[K[K[K9 2009
+[?2004lNovember 9th, 2009
+]0;muhammadmustafa.amer@csa2:~/Assignments/Assignment5[?2004h[UC muhammadmustafa.amer@csa2 Assignment5] ./a5b 11 09 2009[K[K[K[K[K[K[K[K[K[K5 01 200[K[K[K1967
+[?2004lMay 1st, 1967
+]0;muhammadmustafa.amer@csa2:~/Assignments/Assignment5[?2004h[UC muhammadmustafa.amer@csa2 Assignment5] exiot[K[Kt
+[?2004lexit
+
+Script done on 2024-11-24 02:51:55-07:00 [COMMAND_EXIT_CODE="14"]

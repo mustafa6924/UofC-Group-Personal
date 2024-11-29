@@ -1,0 +1,105 @@
+[UC muhammadmustafa.amer@csa1 Assignments] gdb assign2a
+GNU gdb (Fedora Linux) 14.2-3.fc40
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign2a...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.fedoraproject.org/>
+Enable debuginfod for this session? (y or [n]) y
+Debuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+Downloading separate debug info for /home/csusers/muhammadmustafa.amer/Assignments/assign2a
+(No debugging symbols found in assign2a)
+(gdb) b main
+Breakpoint 1 at 0x41020c
+(gdb) b step1
+Breakpoint 2 at 0x410210
+(gdb) b step2
+Breakpoint 3 at 0x410224
+(gdb) b step3
+Breakpoint 4 at 0x410238
+(gdb) b step4
+Breakpoint 5 at 0x41024c
+(gdb) b print
+Breakpoint 6 at 0x410270
+(gdb) display/i $pc
+1: x/i $pc
+<error: No registers.>
+(gdb) r
+Starting program: /home/csusers/muhammadmustafa.amer/Assignments/assign2a
+Downloading separate debug info for system-supplied DSO at 0xfffff7ffb000
+Downloading separate debug info for /lib64/libc.so.6
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+
+Breakpoint 1, 0x000000000041020c in main ()
+1: x/i $pc
+=> 0x41020c <main+8>:   mov     w19, #0x7fc07fc                 // #133957628
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000410210 in step1 ()
+1: x/i $pc
+=> 0x410210 <step1>:    and     w21, w19, #0x55555555
+(gdb) p $w20
+$1 = 1
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x0000000000410224 in step2 ()
+1: x/i $pc
+=> 0x410224 <step2>:    and     w21, w20, #0x33333333
+(gdb) p $w20
+$2 = 201067516
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000410238 in step3 ()
+1: x/i $pc
+=> 0x410238 <step3>:    and     w21, w20, #0xf0f0f0f
+(gdb) p $w20
+$3 = 250810099
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x000000000041024c in step4 ()
+1: x/i $pc
+=> 0x41024c <step4>:    lsl     w21, w20, #24
+(gdb) p $w20
+$4 = 3762282559
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000410270 in print ()
+1: x/i $pc
+=> 0x410270 <print>:    adrp    x0, 0x410000 <_init>
+(gdb) p $w20
+$5 = 1071661024
+(gdb) c
+Continuing.
+Original hexa: 0x07fc07fc reversed hexa: 0x3fe03fe0
+Original binary: 111111111000000011111111100 reversed binary: 111111111000000011111111100000
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000fffffffff1d8 in ?? ()
+1: x/i $pc
+=> 0xfffffffff1d8:      .inst   0xfffff4a5 ; undefined
+(gdb) c
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+(gdb)

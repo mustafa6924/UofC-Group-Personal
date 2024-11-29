@@ -1,0 +1,293 @@
+[UC muhammadmustafa.amer@csa2 Assignment3] gdb assign3
+GNU gdb (Fedora Linux) 14.2-3.fc40
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign3...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.fedoraproject.org/>
+Enable debuginfod for this session? (y or [n]) y
+Debuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+Downloading separate debug info for /home/csusers/muhammadmustafa.amer/Assignments/Assignment3/assign3
+(No debugging symbols found in assign3)
+(gdb) x/79i
+Argument required (starting display address).
+(gdb) x/79i main
+   0x41021c <main>:     stp     x29, x30, [sp, #-352]!
+   0x410220 <main+4>:   mov     x29, sp
+   0x410224 <main+8>:   mov     w20, #0x0                       // #0
+   0x410228 <main+12>:  str     w20, [x29, #336]
+   0x41022c <main+16>:  b       0x410268 <test1>
+   0x410230 <initialize>:       bl      0x410050 <rand@plt>
+   0x410234 <initialize+4>:     and     w21, w0, #0x1ff
+   0x410238 <initialize+8>:     add     x19, x29, #0x10
+   0x41023c <initialize+12>:    ldr     w20, [x29, #336]
+   0x410240 <initialize+16>:    str     w21, [x19, w20, sxtw #2]
+   0x410244 <initialize+20>:    adrp    x0, 0x410000 <_init>
+   0x410248 <initialize+24>:    add     x0, x0, #0x20e
+   0x41024c <initialize+28>:    ldr     w1, [x29, #336]
+   0x410250 <initialize+32>:    add     x19, x29, #0x10
+   0x410254 <initialize+36>:    ldr     w2, [x19, w20, sxtw #2]
+   0x410258 <initialize+40>:    bl      0x410080 <printf@plt>
+   0x41025c <initialize+44>:    ldr     w20, [x29, #336]
+   0x410260 <initialize+48>:    add     w20, w20, #0x1
+   0x410264 <initialize+52>:    str     w20, [x29, #336]
+   0x410268 <test1>:    cmp     w20, #0x50
+   0x41026c <test1+4>:  b.lt    0x410230 <initialize>  // b.tstop
+   0x410270 <test1+8>:  adrp    x0, 0x410000 <_init>
+   0x410274 <test1+12>: add     x0, x0, #0x1ec
+   0x410278 <test1+16>: bl      0x410080 <printf@plt>
+   0x41027c <test1+20>: mov     w20, #0x0                       // #0
+   0x410280 <test1+24>: str     w20, [x29, #336]
+   0x410284 <test1+28>: b       0x410318 <test2>
+   0x410288 <loop2>:    ldr     w20, [x29, #336]
+   0x41028c <loop2+4>:  str     w20, [x29, #348]
+--Type <RET> for more, q to quit, c to continue without paging--c
+   0x410290 <loop2+8>:  ldr     w20, [x29, #336]
+   0x410294 <loop2+12>: add     w21, w20, #0x1
+   0x410298 <loop2+16>: str     w21, [x29, #340]
+   0x41029c <loop2+20>: b       0x4102d0 <test3>
+   0x4102a0 <loop3>:    ldr     w21, [x29, #340]
+   0x4102a4 <loop3+4>:  ldr     w25, [x19, w21, sxtw #2]
+   0x4102a8 <loop3+8>:  ldr     w23, [x29, #348]
+   0x4102ac <loop3+12>: ldr     w26, [x19, w23, sxtw #2]
+   0x4102b0 <loop3+16>: cmp     w25, w26
+   0x4102b4 <loop3+20>: b.lt    0x4102c4 <skip>  // b.tstop
+   0x4102b8 <loop3+24>: ldr     w21, [x29, #340]
+   0x4102bc <loop3+28>: mov     w23, w21
+   0x4102c0 <loop3+32>: str     w23, [x29, #348]
+   0x4102c4 <skip>:     ldr     w21, [x29, #340]
+   0x4102c8 <skip+4>:   add     w21, w21, #0x1
+   0x4102cc <skip+8>:   str     w21, [x29, #340]
+   0x4102d0 <test3>:    ldr     w21, [x29, #340]
+   0x4102d4 <test3+4>:  cmp     w21, #0x50
+   0x4102d8 <test3+8>:  b.lt    0x4102a0 <loop3>  // b.tstop
+   0x4102dc <test3+12>: ldr     w23, [x29, #348]
+   0x4102e0 <test3+16>: ldr     w26, [x19, w23, sxtw #2]
+   0x4102e4 <test3+20>: mov     w22, w26
+   0x4102e8 <test3+24>: str     w22, [x29, #344]
+   0x4102ec <test3+28>: ldr     w20, [x29, #336]
+   0x4102f0 <test3+32>: ldr     w24, [x19, w20, sxtw #2]
+   0x4102f4 <test3+36>: str     w24, [x19, w23, sxtw #2]
+   0x4102f8 <test3+40>: str     w22, [x19, w20, sxtw #2]
+   0x4102fc <test3+44>: adrp    x0, 0x410000 <_init>
+   0x410300 <test3+48>: add     x0, x0, #0x20e
+   0x410304 <test3+52>: ldr     w1, [x29, #336]
+   0x410308 <test3+56>: ldr     w2, [x19, w1, sxtw #2]
+   0x41030c <test3+60>: bl      0x410080 <printf@plt>
+   0x410310 <test3+64>: add     w20, w20, #0x1
+   0x410314 <test3+68>: str     w20, [x29, #336]
+   0x410318 <test2>:    cmp     w20, #0x50
+   0x41031c <test2+4>:  b.lt    0x410288 <loop2>  // b.tstop
+   0x410320 <test2+8>:  adrp    x0, 0x410000 <_init>
+   0x410324 <test2+12>: add     x0, x0, #0x1fe
+   0x410328 <test2+16>: bl      0x410080 <printf@plt>
+   0x41032c <test2+20>: mov     w0, #0x0                        // #0
+   0x410330 <exit>:     ldp     x29, x30, [sp], #352
+   0x410334 <exit+4>:   ret
+   0x410338 <_fini>:    paciasp
+   0x41033c <_fini+4>:  stp     x29, x30, [sp, #-16]!
+   0x410340 <_fini+8>:  mov     x29, sp
+   0x410344 <_fini+12>: ldp     x29, x30, [sp], #16
+   0x410348 <_fini+16>: autiasp
+   0x41034c <_fini+20>: ret
+   0x410350:    Cannot access memory at address 0x410350
+(gdb) x/i $pc
+No registers.
+(gdb) b main
+Breakpoint 1 at 0x410224
+(gdb) r
+Starting program: /home/csusers/muhammadmustafa.amer/Assignments/Assignment3/assign3
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+
+Breakpoint 1, 0x0000000000410224 in main ()
+(gdb) x/i $pc
+=> 0x410224 <main+8>:   mov     w20, #0x0                       // #0
+(gdb) b exit
+Breakpoint 2 at 0x410330 (2 locations)
+(gdb) c
+Continuing.
+v [ 0 ]: 359
+v [ 1 ]: 454
+v [ 2 ]: 105
+v [ 3 ]: 115
+v [ 4 ]: 81
+v [ 5 ]: 255
+v [ 6 ]: 74
+v [ 7 ]: 236
+v [ 8 ]: 297
+v [ 9 ]: 205
+v [ 10 ]: 186
+v [ 11 ]: 427
+v [ 12 ]: 498
+v [ 13 ]: 251
+v [ 14 ]: 483
+v [ 15 ]: 326
+v [ 16 ]: 124
+v [ 17 ]: 194
+v [ 18 ]: 84
+v [ 19 ]: 504
+v [ 20 ]: 283
+v [ 21 ]: 488
+v [ 22 ]: 487
+v [ 23 ]: 397
+v [ 24 ]: 374
+v [ 25 ]: 346
+v [ 26 ]: 302
+v [ 27 ]: 99
+v [ 28 ]: 51
+v [ 29 ]: 415
+v [ 30 ]: 201
+v [ 31 ]: 410
+v [ 32 ]: 358
+v [ 33 ]: 306
+v [ 34 ]: 13
+v [ 35 ]: 439
+v [ 36 ]: 49
+v [ 37 ]: 88
+v [ 38 ]: 163
+v [ 39 ]: 346
+v [ 40 ]: 293
+v [ 41 ]: 349
+v [ 42 ]: 261
+v [ 43 ]: 279
+v [ 44 ]: 88
+v [ 45 ]: 233
+v [ 46 ]: 94
+v [ 47 ]: 212
+v [ 48 ]: 427
+v [ 49 ]: 178
+v [ 50 ]: 205
+v [ 51 ]: 198
+v [ 52 ]: 155
+v [ 53 ]: 180
+v [ 54 ]: 84
+v [ 55 ]: 17
+v [ 56 ]: 14
+v [ 57 ]: 386
+v [ 58 ]: 116
+v [ 59 ]: 65
+v [ 60 ]: 289
+v [ 61 ]: 317
+v [ 62 ]: 476
+v [ 63 ]: 135
+v [ 64 ]: 112
+v [ 65 ]: 489
+v [ 66 ]: 62
+v [ 67 ]: 161
+v [ 68 ]: 65
+v [ 69 ]: 225
+v [ 70 ]: 508
+v [ 71 ]: 359
+v [ 72 ]: 62
+v [ 73 ]: 257
+v [ 74 ]: 126
+v [ 75 ]: 151
+v [ 76 ]: 490
+v [ 77 ]: 220
+v [ 78 ]: 363
+v [ 79 ]: 406
+Unsorted Array:
+v [ 0 ]: 508
+v [ 1 ]: 504
+v [ 2 ]: 498
+v [ 3 ]: 490
+v [ 4 ]: 489
+v [ 5 ]: 488
+v [ 6 ]: 487
+v [ 7 ]: 483
+v [ 8 ]: 476
+v [ 9 ]: 454
+v [ 10 ]: 439
+v [ 11 ]: 427
+v [ 12 ]: 427
+v [ 13 ]: 415
+v [ 14 ]: 410
+v [ 15 ]: 406
+v [ 16 ]: 397
+v [ 17 ]: 386
+v [ 18 ]: 374
+v [ 19 ]: 363
+v [ 20 ]: 359
+v [ 21 ]: 359
+v [ 22 ]: 358
+v [ 23 ]: 349
+v [ 24 ]: 346
+v [ 25 ]: 346
+v [ 26 ]: 326
+v [ 27 ]: 317
+v [ 28 ]: 306
+v [ 29 ]: 302
+v [ 30 ]: 297
+v [ 31 ]: 293
+v [ 32 ]: 289
+v [ 33 ]: 283
+v [ 34 ]: 279
+v [ 35 ]: 261
+v [ 36 ]: 257
+v [ 37 ]: 255
+v [ 38 ]: 251
+v [ 39 ]: 236
+v [ 40 ]: 233
+v [ 41 ]: 225
+v [ 42 ]: 220
+v [ 43 ]: 212
+v [ 44 ]: 205
+v [ 45 ]: 205
+v [ 46 ]: 201
+v [ 47 ]: 198
+v [ 48 ]: 194
+v [ 49 ]: 186
+v [ 50 ]: 180
+v [ 51 ]: 178
+v [ 52 ]: 163
+v [ 53 ]: 161
+v [ 54 ]: 155
+v [ 55 ]: 151
+v [ 56 ]: 135
+v [ 57 ]: 126
+v [ 58 ]: 124
+v [ 59 ]: 116
+v [ 60 ]: 115
+v [ 61 ]: 112
+v [ 62 ]: 105
+v [ 63 ]: 99
+v [ 64 ]: 94
+v [ 65 ]: 88
+v [ 66 ]: 88
+v [ 67 ]: 84
+v [ 68 ]: 84
+v [ 69 ]: 81
+v [ 70 ]: 74
+v [ 71 ]: 65
+v [ 72 ]: 65
+v [ 73 ]: 62
+v [ 74 ]: 62
+v [ 75 ]: 51
+v [ 76 ]: 49
+v [ 77 ]: 17
+v [ 78 ]: 14
+v [ 79 ]: 13
+Sorted Array:
+
+Breakpoint 2.1, 0x0000000000410330 in exit ()
+(gdb) c
+Continuing.
+
+Breakpoint 2.2, __GI_exit (status=0) at exit.c:138
+138       __run_exit_handlers (status, &__exit_funcs, true, true);
+(gdb)

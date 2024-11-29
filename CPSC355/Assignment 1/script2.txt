@@ -1,0 +1,43 @@
+[UC muhammadmustafa.amer@csa2 Assignments] gdb assign1b01
+GNU gdb (Fedora Linux) 14.2-3.fc40
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign1b01...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.fedoraproject.org/>
+Enable debuginfod for this session? (y or [n]) y
+Debuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+(No debugging symbols found in assign1b01)
+(gdb) display/i $pc
+1: x/i $pc
+<error: No registers.>
+(gdb) b exit
+Breakpoint 1 at 0x410268
+(gdb) r
+Starting program: /home/csusers/muhammadmustafa.amer/Assignments/assign1b01
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+At the value of x = 5 y is minimum at y = -4968
+
+Breakpoint 1.2, __GI_exit (status=48) at exit.c:138
+138       __run_exit_handlers (status, &__exit_funcs, true, true);
+1: x/i $pc
+=> 0xfffff7e1874c <__GI_exit>:  paciasp
+(gdb) c
+Continuing.
+[Inferior 1 (process 2595341) exited with code 060]
+(gdb)
