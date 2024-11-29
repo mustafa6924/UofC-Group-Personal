@@ -1,0 +1,720 @@
+Initial Configuration:
+[         ][         ][         ][         ][         ]
+[         ][ F-f1342 ][         ][ F-e8273 ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ C-c1334 ]
+[         ][         ][         ][ E-e7263 ][         ]
+
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... CARGOSHIP c1334
+Start exploring: CARGOSHIP c1334
+Found: CARGOSHIP c1334 at distance: 1
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 4)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][ F-f1342 ][         ][ F-e8273 ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ C-c1334 ]
+[         ][         ][         ][         ][ E-e7263 ]
+
+.........interacting...........with.... CARGOSHIP c1334
+Start exploring: CARGOSHIP c1334
+Found: CARGOSHIP c1334 at distance: 1
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (1, 2)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][ F-f1342 ][ F-e8273 ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ C-c1334 ]
+[         ][         ][         ][         ][ E-e7263 ]
+
+.........interacting...........with.... CARGOSHIP c1334
+FIGHTER f1342 destroyed spaceship: CARGOSHIP c1334
+Interaction Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][ F-f1342 ][ F-e8273 ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][         ]
+[         ][         ][         ][         ][ E-e7263 ]
+
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Spaceship: FIGHTER e8273 is not in the scan-range
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (0, 2)
+Move Configuration:
+[         ][         ][ F-f1342 ][         ][         ]
+[         ][         ][         ][ F-e8273 ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][         ]
+[         ][         ][         ][         ][ E-e7263 ]
+
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (1, 4)
+Move Configuration:
+[         ][         ][ F-f1342 ][         ][         ]
+[         ][         ][         ][         ][ F-e8273 ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][         ]
+[         ][         ][         ][         ][ E-e7263 ]
+
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 3)
+Move Configuration:
+[         ][         ][ F-f1342 ][         ][         ]
+[         ][         ][         ][         ][ F-e8273 ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e7263
+Start exploring: EXPLORER e7263
+Found: EXPLORER e7263 at distance: 1
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Spaceship: FIGHTER e8273 is not in the scan-range
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+Start exploring: EXPLORER e7263
+Found: EXPLORER e7263 at distance: 1
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (1, 2)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][ F-f1342 ][         ][ F-e8273 ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e8263
+damage is less than distance!
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (2, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e8263
+Start exploring: EXPLORER e8263
+Found: EXPLORER e8263 at distance: 1
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... EXPLORER e8263
+Explorer cannot interact with itself
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (1, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e8263
+Start exploring: EXPLORER e8263
+Found: EXPLORER e8263 at distance: 1
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+Start exploring: EXPLORER e7263
+Found: EXPLORER e7263 at distance: 1
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Spaceship: FIGHTER e8273 is not in the scan-range
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... EXPLORER e7263
+Start exploring: EXPLORER e7263
+Found: EXPLORER e7263 at distance: 1
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (0, 3)
+Move Configuration:
+[         ][         ][         ][ F-e8273 ][         ]
+[         ][         ][ F-f1342 ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e8263
+damage is less than distance!
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Spaceship: FIGHTER f1342 is not in the scan-range
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Spaceship: FIGHTER f1342 is not in the scan-range
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... EXPLORER e7263
+Start exploring: EXPLORER e7263
+Found: EXPLORER e7263 at distance: 1
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (0, 2)
+Move Configuration:
+[         ][         ][ F-f1342 ][ F-e8273 ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e7263
+damage is less than distance!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e8263
+Explorer cannot interact with itself
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (0, 2)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Spaceship: FIGHTER f1342 is not in the scan-range
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (0, 1)
+Move Configuration:
+[         ][ F-f1342 ][         ][ F-e8273 ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (0, 4)
+Move Configuration:
+[         ][ F-f1342 ][         ][         ][ F-e8273 ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (1, 0)
+Move Configuration:
+[         ][         ][         ][         ][ F-e8273 ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Spaceship: FIGHTER e8273 is not in the scan-range
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (-1, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (1, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Spaceship: FIGHTER e8273 is not in the scan-range
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Spaceship: FIGHTER f1342 is not in the scan-range
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (1, 3)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[ F-f1342 ][         ][         ][ F-e8273 ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e8263
+damage is less than distance!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+Start exploring: EXPLORER e7263
+Found: EXPLORER e7263 at distance: 1
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (0, 2)
+Move Configuration:
+[         ][         ][ F-e8273 ][         ][         ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e8263
+damage is less than distance!
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (-1, 2)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e8263
+damage is less than distance!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Spaceship: FIGHTER e8273 is not in the scan-range
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (0, 1)
+Move Configuration:
+[         ][ F-f1342 ][ F-e8273 ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e7263
+damage is less than distance!
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (1, 0)
+Move Configuration:
+[         ][         ][ F-e8273 ][         ][         ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e8263
+Explorer cannot interact with itself
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... EXPLORER e7263
+Start exploring: EXPLORER e7263
+Found: EXPLORER e7263 at distance: 1
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Spaceship: FIGHTER f1342 is not in the scan-range
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (-1, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (0, -1)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+damage is less than distance!
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (2, 1)
+Move Configuration:
+[         ][         ][ F-e8273 ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][ F-f1342 ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (3, 0)
+Move Configuration:
+[         ][         ][ F-e8273 ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e7263
+damage is less than distance!
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Spaceship: FIGHTER f1342 is not in the scan-range
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+Explorer cannot interact with itself
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (3, -1)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+damage is less than distance!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... EXPLORER e8263
+Explorer cannot interact with itself
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (-1, 1)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+damage is less than distance!
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (-1, 1)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e8263
+damage is less than distance!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+Start exploring: EXPLORER e7263
+Found: EXPLORER e7263 at distance: 1
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (0, 3)
+Move Configuration:
+[         ][         ][         ][ F-e8273 ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e7263
+damage is less than distance!
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+Explorer cannot interact with itself
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (-1, 2)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e8263
+damage is less than distance!
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (0, 4)
+Move Configuration:
+[         ][         ][         ][         ][ F-e8273 ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e7263
+damage is less than distance!
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Spaceship: FIGHTER f1342 is not in the scan-range
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+Explorer cannot interact with itself
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Spaceship: FIGHTER f1342 is not in the scan-range
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (4, -1)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (1, 4)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][ F-e8273 ]
+[         ][         ][         ][         ][         ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... EXPLORER e8263
+Explorer cannot interact with itself
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (4, -1)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e8263
+Explorer cannot interact with itself
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+Explorer cannot interact with itself
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (4, 1)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][ F-e8273 ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][ F-f1342 ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... EXPLORER e8263
+Explorer cannot interact with itself
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Spaceship: FIGHTER e8273 is not in the scan-range
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (2, 4)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][ F-e8273 ]
+[         ][         ][         ][         ][         ]
+[         ][ F-f1342 ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (3, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+Explorer cannot interact with itself
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (3, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... EXPLORER e7263
+Start exploring: EXPLORER e7263
+Found: EXPLORER e7263 at distance: 1
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e8263
+Start exploring: EXPLORER e8263
+Found: EXPLORER e8263 at distance: 1
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e8263
+Start exploring: EXPLORER e8263
+Found: EXPLORER e8263 at distance: 1
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Found: FIGHTER e8273 at distance: 2
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Found: FIGHTER e8273 at distance: 2
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (4, 0)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][ F-e8273 ]
+[         ][         ][         ][         ][         ]
+[ F-f1342 ][         ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e7263
+damage is less than distance!
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Found: FIGHTER e8273 at distance: 2
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e8263
+Start exploring: EXPLORER e8263
+Found: EXPLORER e8263 at distance: 1
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Found: FIGHTER e8273 at distance: 2
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Spaceship: FIGHTER f1342 is not in the scan-range
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e8263
+Explorer cannot interact with itself
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Spaceship: FIGHTER f1342 is not in the scan-range
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (2, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (3, -1)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+fighters do not fight with fighters!
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (5, 0)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Spaceship: FIGHTER f1342 is not in the scan-range
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (4, 1)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][ F-e8273 ]
+[         ][         ][         ][         ][         ]
+[         ][ F-f1342 ][         ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e7263
+damage is less than distance!
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Found: FIGHTER e8273 at distance: 2
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... EXPLORER e7263
+Explorer cannot interact with itself
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (4, 2)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][ F-e8273 ]
+[         ][         ][         ][         ][         ]
+[         ][         ][ F-f1342 ][ E-e8263 ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e7263
+FIGHTER f1342 destroyed spaceship: EXPLORER e7263
+Interaction Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][ F-e8273 ]
+[         ][         ][         ][         ][         ]
+[         ][         ][ F-f1342 ][ E-e8263 ][         ]
+
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (3, 3)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ F-e8273 ][         ]
+[         ][         ][ F-f1342 ][ E-e8263 ][         ]
+
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (3, 4)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][ F-e8273 ]
+[         ][         ][ F-f1342 ][ E-e8263 ][         ]
+
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (4, 3)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... EXPLORER e8263
+FIGHTER f1342 destroyed spaceship: EXPLORER e8263
+Interaction Configuration:
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][         ][ F-e8273 ]
+[         ][         ][ F-f1342 ][         ][         ]
+
+All explorers and cargoes have been removed by fighters. Game over!

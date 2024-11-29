@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="682.0" prefWidth="956.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ucalgary.sm.mma.cpsc233w24groupprojectmmasm.Controller">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleLoad" text="Open…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#handleQuitApp" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleAboutApp" text="About Finance Tracker" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <SplitPane dividerPositions="0.327116512992456, 0.6665968147527243" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane style="-fx-background-color: Lightblue;">
+               <children>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="165.0" text="List of Companies" textAlignment="CENTER" wrapText="false">
+                     <font>
+                        <Font size="18.0" fx:id="x12" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="listCompanies" layoutX="15.0" layoutY="54.0" prefHeight="210.0" prefWidth="280.0" />
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="297.0" minWidth="60.0" prefWidth="-1.0" text="Add Company " textAlignment="CENTER" wrapText="false">
+                     <font>
+                        <Font size="18.0" fx:id="x111" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="companyID" layoutX="132.0" layoutY="341.0" style="-fx-background-color: white;" />
+                  <TextField fx:id="companyName" layoutX="132.0" layoutY="379.0" style="-fx-background-color: white;" />
+                  <Text layoutX="20.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company ID" wrappingWidth="88.80000000000001" />
+                  <Text layoutX="20.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company Name " wrappingWidth="106.40000000000003" />
+                  <Button layoutX="142.0" layoutY="298.0" mnemonicParsing="false" onAction="#addCompany" text="Add" />
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="445.0" prefHeight="27.0" prefWidth="176.0" text="Company Functions" textAlignment="CENTER" wrapText="false">
+                     <font>
+                        <Font size="18.0" fx:id="x121" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="companyDropdown" layoutX="133.0" layoutY="480.0" prefWidth="150.0" />
+                  <Text layoutX="49.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter ID " wrappingWidth="57.59999999999991" />
+                  <RadioButton fx:id="companyEmployees" layoutX="20.0" layoutY="519.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" text="Number of employees">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="companyFunctions" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="companyAverageAge" layoutX="20.0" layoutY="545.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" text="Company average age" toggleGroup="$companyFunctions" />
+                  <Button layoutX="101.0" layoutY="590.0" mnemonicParsing="false" onAction="#handleCompanyFunctions" text="Get Information" />
+               </children>
+        </AnchorPane>
+      <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="906.0" prefWidth="401.0" style="-fx-background-color: Lightblue;">
+               <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" text="List of Clients" textAlignment="CENTER" wrapText="false">
+              <font>
+                <Font size="18.0" fx:id="x1" />
+              </font>
+            </Label>
+                  <TextArea fx:id="listClients" editable="false" layoutX="13.0" layoutY="56.0" prefHeight="210.0" prefWidth="292.0" />
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="300.0" minWidth="60.0" prefWidth="-1.0" text="Add Client " textAlignment="CENTER" wrapText="false">
+                     <font>
+                        <Font size="18.0" fx:id="x11" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="clientID" layoutX="120.0" layoutY="341.0" style="-fx-background-color: white;" />
+                  <TextField fx:id="clientName" layoutX="120.0" layoutY="379.0" style="-fx-background-color: white;" />
+                  <TextField fx:id="clientAge" layoutX="120.0" layoutY="418.0" style="-fx-background-color: white;" />
+                  <TextField fx:id="clientCountry" layoutX="120.0" layoutY="456.0" style="-fx-background-color: white;" />
+                  <TextField fx:id="clientIncome" layoutX="120.0" layoutY="495.0" style="-fx-background-color: white;" />
+                  <TextField fx:id="clientSpending" layoutX="120.0" layoutY="533.0" style="-fx-background-color: white;" />
+                  <Text layoutX="22.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client ID" wrappingWidth="71.20000801086417" />
+                  <Text layoutX="23.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Name" wrappingWidth="88.80000000000001" />
+                  <Text layoutX="22.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age" wrappingWidth="71.20000801086417" />
+                  <Text layoutX="22.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" wrappingWidth="71.20000801086417" />
+                  <Text layoutX="22.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income" wrappingWidth="71.20000801086417" />
+                  <Text layoutX="22.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spending" wrappingWidth="71.20000801086417" />
+                  <Text layoutX="22.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company" wrappingWidth="71.20000801086417" />
+                  <Button layoutX="117.0" layoutY="298.0" mnemonicParsing="false" onAction="#addClient" text="Add" />
+                  <ComboBox fx:id="newClientCompanyListDropdown" layoutX="120.0" layoutY="570.0" prefWidth="150.0" />
+               </children>
+      </AnchorPane>
+        <AnchorPane style="-fx-background-color: #D1CFE2;">
+          <children>
+            <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" text="Special Client Functions " textAlignment="CENTER" wrapText="false" />
+                  <RadioButton fx:id="currencyConverter" layoutX="14.0" layoutY="87.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" text="Income Currency Convert">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="specialFunctions" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="suggestedHoliday" layoutX="14.0" layoutY="167.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="176.0" text="Suggested Holiday " toggleGroup="$specialFunctions" />
+                  <RadioButton fx:id="canadaSavings" layoutX="14.0" layoutY="207.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="176.0" text="Savings in Canada " toggleGroup="$specialFunctions" />
+                  <RadioButton fx:id="foreignSavings" layoutX="14.0" layoutY="354.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="214.0" text="Savings in foreign Country" toggleGroup="$specialFunctions" />
+                  <RadioButton fx:id="canada10" layoutX="47.0" layoutY="266.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="208.0" text="Save 10 Percent of income">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="functionOptions" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="canada20" layoutX="47.0" layoutY="295.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="208.0" text="Save 20 Percent of income" toggleGroup="$functionOptions" />
+                  <RadioButton fx:id="canada30" layoutX="47.0" layoutY="325.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="202.0" text="Save 30 Percent of income" toggleGroup="$functionOptions" />
+                  <TextField fx:id="canadaMonths" layoutX="132.0" layoutY="233.0" style="-fx-background-color: White;" />
+                  <Text layoutX="82.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter ID " wrappingWidth="57.59999999999991" />
+                  <TextField fx:id="foreignMonths" layoutX="132.0" layoutY="433.0" style="-fx-background-color: White;" />
+                  <Text layoutX="14.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Foreign Country " wrappingWidth="106.40000000000003" />
+                  <Text layoutX="14.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Months" wrappingWidth="97.59999999999991" />
+                  <Text layoutX="14.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Months" wrappingWidth="97.59999999999991" />
+                  <RadioButton fx:id="foreign10" layoutX="47.0" layoutY="476.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="208.0" text="Save 10 Percent of income" toggleGroup="$functionOptions" />
+                  <RadioButton fx:id="foreign20" layoutX="47.0" layoutY="505.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="208.0" text="Save 20 Percent of income" toggleGroup="$functionOptions" />
+                  <RadioButton fx:id="foreign30" layoutX="47.0" layoutY="535.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="202.0" text="Save 30 Percent of income" toggleGroup="$functionOptions" />
+                  <Button layoutX="97.0" layoutY="580.0" mnemonicParsing="false" onAction="#handleSpecialFunctions" text="Get Information" />
+                  <Text layoutX="18.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Foreign Country" wrappingWidth="97.59999999999991" />
+                  <ComboBox fx:id="specialIDdropdown" layoutX="140.0" layoutY="49.0" prefWidth="150.0" />
+                  <ComboBox fx:id="convertToCountryDropdown" layoutX="132.0" layoutY="123.0" prefWidth="150.0" />
+                  <ComboBox fx:id="foreignCountryDropdown" layoutX="132.0" layoutY="391.0" prefWidth="150.0" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+    <HBox id="HBox" alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="900.0" spacing="5.0" VBox.vgrow="NEVER">
+      <children>
+        <Label fx:id="status" maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="Left status" HBox.hgrow="ALWAYS">
+          <textFill>
+            <Color red="0.625" green="0.625" blue="0.625" fx:id="x4" />
+          </textFill>
+               <font>
+                  <Font size="12.0" />
+               </font>
+        </Label>
+        <Pane HBox.hgrow="ALWAYS" />
+      </children>
+      <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+      </padding>
+    </HBox>
+  </children>
+</VBox>

@@ -1,0 +1,142 @@
+Initial Configuration:
+[         ][         ][         ][         ][         ]
+[         ][ F-f1342 ][         ][ F-e8273 ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][ C-c1334 ]
+[         ][         ][         ][ E-e7263 ][         ]
+
+Player Spaceship: CARGOSHIP c1334
+........Moving.......Start moving CARGOSHIP c1334 to the position: (2, 4)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][ F-f1342 ][         ][ F-e8273 ][         ]
+[         ][         ][         ][         ][ C-c1334 ]
+[         ][         ][         ][ E-e8263 ][         ]
+[         ][         ][         ][ E-e7263 ][         ]
+
+.........interacting...........with.... EXPLORER e8263
+CargoShip cannot interact with EXPLORER
+Player Spaceship: FIGHTER e8273
+........Moving.......Start moving FIGHTER e8273 to the position: (2, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: CARGOSHIP c1334
+........Moving.......Start moving CARGOSHIP c1334 to the position: (1, 4)
+Move Configuration:
+[         ][         ][         ][         ][         ]
+[         ][ F-f1342 ][         ][ F-e8273 ][ C-c1334 ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][         ]
+[         ][         ][         ][ E-e7263 ][         ]
+
+.........interacting...........with.... CARGOSHIP c1334
+CargoShip cannot interact with itself
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 3)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Spaceship: FIGHTER f1342 is not in the scan-range
+Player Spaceship: CARGOSHIP c1334
+........Moving.......Start moving CARGOSHIP c1334 to the position: (0, 4)
+Move Configuration:
+[         ][         ][         ][         ][ C-c1334 ]
+[         ][ F-f1342 ][         ][ F-e8273 ][         ]
+[         ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][         ]
+[         ][         ][         ][ E-e7263 ][         ]
+
+.........interacting...........with.... CARGOSHIP c1334
+CargoShip cannot interact with itself
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 3)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... FIGHTER f1342
+Start exploring: FIGHTER f1342
+Found: FIGHTER f1342 at distance: 2
+Player Spaceship: FIGHTER f1342
+........Moving.......Start moving FIGHTER f1342 to the position: (2, 0)
+Move Configuration:
+[         ][         ][         ][         ][ C-c1334 ]
+[         ][         ][         ][ F-e8273 ][         ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][         ]
+[         ][         ][         ][ E-e7263 ][         ]
+
+.........interacting...........with.... FIGHTER e8273
+fighters do not fight with fighters!
+Player Spaceship: CARGOSHIP c1334
+........Moving.......Start moving CARGOSHIP c1334 to the position: (0, 3)
+Move Configuration:
+[         ][         ][         ][ C-c1334 ][         ]
+[         ][         ][         ][ F-e8273 ][         ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][         ]
+[         ][         ][         ][ E-e7263 ][         ]
+
+.........interacting...........with.... CARGOSHIP c1334
+CargoShip cannot interact with itself
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (4, 4)
+Move Configuration:
+[         ][         ][         ][ C-c1334 ][         ]
+[         ][         ][         ][ F-e8273 ][         ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][         ]
+[         ][         ][         ][         ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e7263
+Explorer cannot interact with itself
+Player Spaceship: EXPLORER e7263
+........Moving.......Start moving EXPLORER e7263 to the position: (5, 4)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Spaceship: FIGHTER e8273 is not in the scan-range
+Player Spaceship: CARGOSHIP c1334
+........Moving.......Start moving CARGOSHIP c1334 to the position: (0, 2)
+Move Configuration:
+[         ][         ][ C-c1334 ][         ][         ]
+[         ][         ][         ][ F-e8273 ][         ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][ E-e8263 ][         ]
+[         ][         ][         ][         ][ E-e7263 ]
+
+.........interacting...........with.... CARGOSHIP c1334
+CargoShip cannot interact with itself
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (3, 4)
+Move Configuration:
+[         ][         ][ C-c1334 ][         ][         ]
+[         ][         ][         ][ F-e8273 ][         ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][         ][ E-e8263 ]
+[         ][         ][         ][         ][ E-e7263 ]
+
+.........interacting...........with.... EXPLORER e7263
+Start exploring: EXPLORER e7263
+Found: EXPLORER e7263 at distance: 1
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (4, 4)
+Moving Failed! the position is filled with another spaceship!
+.........interacting...........with.... EXPLORER e8263
+Explorer cannot interact with itself
+Player Spaceship: CARGOSHIP c1334
+........Moving.......Start moving CARGOSHIP c1334 to the position: (0, 1)
+Move Configuration:
+[         ][ C-c1334 ][         ][         ][         ]
+[         ][         ][         ][ F-e8273 ][         ]
+[ F-f1342 ][         ][         ][         ][         ]
+[         ][         ][         ][         ][ E-e8263 ]
+[         ][         ][         ][         ][ E-e7263 ]
+
+.........interacting...........with.... FIGHTER e8273
+CargoShip cannot interact with FIGHTER
+Player Spaceship: EXPLORER e8263
+........Moving.......Start moving EXPLORER e8263 to the position: (3, 5)
+Moving Failed! out of bound x or y!
+.........interacting...........with.... FIGHTER e8273
+Start exploring: FIGHTER e8273
+Found: FIGHTER e8273 at distance: 2
+All fighters have been reported by explorers. Game over!
